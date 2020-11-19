@@ -6,10 +6,11 @@
 # development_tool： PyCharm
 
 from flask import Blueprint
+from flask import render_template
 
 
 bp=Blueprint("admin", __name__)
 
-@bp.route("/admin")
+@bp.route("/admin", methods=["GET"])
 def index():
-    return "这是后台首页"
+    return render_template('admin/login.html')

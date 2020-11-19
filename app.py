@@ -5,7 +5,7 @@
 # @File    : app.py
 
 
-from flask import Flask
+from flask import Flask, render_template
 from apps.admin.views import bp as admin_bp
 from apps.common.views import bp as common_bp
 from apps.front.views import bp as front_bp
@@ -23,7 +23,10 @@ def create_app():
     db.init_app(app)
     return app
 
+@app.route("/admin", methods=["GET"])
+def index():
+    return render_template('admin/login.html')
 
 if __name__ == '__main__':
     app=create_app()
-    app.run(host="127.0.0.1", port=8000, debug=True)
+    app.run(debug=True)
