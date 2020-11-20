@@ -23,11 +23,6 @@ def create_app():
     db.init_app(app)
     return app
 
-
-@app.route("/admin", methods=["GET"])
-def index():
-    return render_template('admin/login.html')
-
 if __name__ == '__main__':
     app=create_app()
     app.run(debug=True)

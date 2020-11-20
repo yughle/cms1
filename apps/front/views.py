@@ -10,6 +10,6 @@ from flask import Blueprint, render_template, session, request, redirect, url_fo
 
 bp=Blueprint("front", __name__)
 
-@bp.route("/")
+@bp.route("/front/")
 def index():
     return "这是前台首页"
