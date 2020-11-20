@@ -23,6 +23,7 @@ def create_app():
     db.init_app(app)
     return app
 
+
 @app.route("/admin", methods=["GET"])
 def index():
     return render_template('admin/login.html')

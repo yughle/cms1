@@ -13,12 +13,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/apps/admin/forms.py">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/apps/admin/models.py">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/apps/admin/views.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/apps/front/views.py">
           <value>
             <set />
           </value>
@@ -39,6 +49,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/templates/login.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/utils/captcha.py">
           <value>
             <set />
           </value>

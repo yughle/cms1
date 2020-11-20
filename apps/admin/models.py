@@ -12,7 +12,7 @@ from werkzeug.security import generate_password_hash
 from werkzeug.security import check_password_hash
 
 
-class User(db.Model):
+class Users(db.Model):
     __tablename__ = "jg_user"
     __password = db.Column(db.String(50), nullable=False)
     uid = db.Column(db.Integer, primary_key=True, autoincrement=True)
